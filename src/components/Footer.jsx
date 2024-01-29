@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
-
+import {selectorsValue} from "../engine/slice/counter.js";
 
 function Footer() {
-    const counterState = useSelector(state => state.counter.value)
+    const counterState = useSelector(selectorsValue);
     return(
             <footer>
                 <span>Counter: {counterState}</span>

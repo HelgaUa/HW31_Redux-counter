@@ -13,4 +13,5 @@ const counterSlice = createSlice({
     }
 })
 
+export const selectorsValue = state => state.counter.value;
 export default counterSlice;
